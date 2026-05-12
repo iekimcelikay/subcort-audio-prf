@@ -1,6 +1,8 @@
 # subcort-audio-prf
 Standalone repository with only the necessary code for Gari
 
+- cochlea model source code not included.
+(read `doc_install_cochlea.md`)
 - project root defined locally, needs to be fixed.
 - imports use the old package structure, needs to be fixed
 
