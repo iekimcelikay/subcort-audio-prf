@@ -15,6 +15,17 @@ There's a test script that can show the workflow: 'subcort-audio-prf/auditory_pr
 
 Probably nothing works right now, because the scripts are moved from a different repository and paths are not correct. But this doesn't make them illegible.
 
+| File                                         | Role                                                                                      |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| prf_pipeline/full_pipeline_with_adaptrans.py | Main per-sequence pipeline entry point (Currently based on Model4 (Duration + AdapTrans)) |
+| prf_pipeline/run_assembly.py                 | Run-level assembly + HRF                                                                  |
+| prf_pipeline/adaptrans_onoff_filters.py      | AdapTrans ON/OFF kernels                                                                  |
+| prf_pipeline/chunk_timecourse.py             | Chunking stage                                                                            |
+| prf_pipeline/duration_models.py              | Duration Gaussian                                                                         |
+| prf_pipeline/powerlaw_function.py            | Spectral sharpening                                                                       |
+| prf_pipeline/load_extract_cf_timecourse.py   | Loads .npz, extracts CF row                                                               |
+| prf_pipeline/hrf.py                          | HRF kernel + convolution (NumPy)                                                          |
+
 ## Flowchart of forward model pipeline
 
 ``` mermaid
